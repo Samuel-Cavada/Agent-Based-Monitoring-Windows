@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/Platform-Local%20VM-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" alt="Cloud Platform" />
   <img src="https://img.shields.io/badge/OS-Windows%2010-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="OS" />
   <img src="https://img.shields.io/badge/Tool-Tenable.io-00B388?style=for-the-badge&logo=tenable&logoColor=white" alt="Tool" />
-  <img src="https://img.shields.io/badge/Focus-Agent-Based%20Scanning-orange?style=for-the-badge" alt="Focus Area" />
+  <img src="https://img.shields.io/badge/Focus-Agent%20Based%20Scanning-orange?style=for-the-badge" alt="Focus Area" />
 </p>
 
 ---
