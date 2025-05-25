@@ -53,7 +53,7 @@
 ---
 
 ### Step 1: VM and Agent Group Setup
-> - Provisioned a Windows VM with a unique, secure username and password
+> - Provisioned a Windows 10 VM from the Azure Marketplace. [See full provisioning steps ↗](https://github.com/Samuel-Cavada/Azure-VM-Build) (Ctrl+Click to open in a new tab).
 > - Created a new Agent Group in Tenable:  
   `Settings → Sensors → Nessus Agents → Agent Groups → + Add Agent Group`
 
