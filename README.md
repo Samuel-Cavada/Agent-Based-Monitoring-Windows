@@ -99,6 +99,7 @@
 
 - Waited 30–60 minutes for full vulnerability data to populate
 
+![Step 4](https://github.com/Samuel-Cavada/Agent-Based-Monitoring-Windows/blob/main/images/ABMW23.png)
 ![Step 4](https://github.com/Samuel-Cavada/Agent-Based-Monitoring-Linux/blob/main/images/ABMW24.png)
 ![Step 4](https://github.com/Samuel-Cavada/Agent-Based-Monitoring-Windows/blob/main/images/ABMW24.png)
 
