@@ -75,20 +75,26 @@
 ---
 
 ### Step 3: Create and Trigger Agent Scan
-> - Created a new scan with type: **Basic Agent Scan**
-> - Selected the agent group created earlier
-> - Created a trigger file named `start.txt` in the designated directory to begin scan
-> - Verified the scan initiated when the file disappeared
+`Scans → My Scans → Create Scan → Nessus Agent → Basic Agent Scan`
+
+- **Name**: `Custom Name`
+- **Agent Group**: `Your Agent Group Name`
+- **Scan Type**  
+  - **Triggered Scan**  
+    - Select trigger: `Filename`  
+    - Enter value: `File name & file type (e.g., Start.txt)`
 
 ![Step 3](assets/images/step3.jpg)
 
 ---
 
 ### Step 4: Monitor and Analyze Results
-> - Monitored agent linking under:
+- Monitored agent linking under:
   `Settings → Sensors → Nessus Agents`
-> - Checked “Scans” tab in Tenable to view scan status and results
-> - Waited 30–60 minutes for full vulnerability data to populate
+- Checked the “Scans” tab in Tenable to view scan status and results:  
+  `Scans → My Scans → Your Agent Scan Name`
+
+- Waited 30–60 minutes for full vulnerability data to populate
 
 ![Step 4](assets/images/step4.jpg)
 
