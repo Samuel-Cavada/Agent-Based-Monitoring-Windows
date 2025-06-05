@@ -1,22 +1,22 @@
-<p align="center">
-  <a href="https://github.com/Samuel-Cavada" target="_blank">
-    <img src="https://img.shields.io/badge/Back_to_Main_Page-000000?style=for-the-badge&logo=github&logoColor=white" alt="Back to Main Page"/>
-  </a>
-</p>
+<p align="center"
+  <a href="https://github.com/Samuel-Cavada" target="_blank"
+    <img src="https://img.shields.io/badge/Back_to_Main_Page-000000?style=for-the-badge&logo=github&logoColor=white" alt="Back to Main Page"/
+  </a
+</p
 
-<h1 align="center">Windows VM Agent-Based Vulnerability Scanning with Tenable</h1>
+<h1 align="center"Windows VM Agent-Based Vulnerability Scanning with Tenable</h1
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Platform-Local%20VM-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" alt="Cloud Platform" />
-  <img src="https://img.shields.io/badge/OS-Windows%2010-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="OS" />
-  <img src="https://img.shields.io/badge/Tool-Tenable.io-00B388?style=for-the-badge&logo=tenable&logoColor=white" alt="Tool" />
-  <img src="https://img.shields.io/badge/Focus-Agent%20Based%20Scanning-orange?style=for-the-badge" alt="Focus Area" />
-</p>
+<p align="center"
+  <img src="https://img.shields.io/badge/Platform-Local%20VM-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" alt="Cloud Platform" /
+  <img src="https://img.shields.io/badge/OS-Windows%2010-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="OS" /
+  <img src="https://img.shields.io/badge/Tool-Tenable.io-00B388?style=for-the-badge&logo=tenable&logoColor=white" alt="Tool" /
+  <img src="https://img.shields.io/badge/Focus-Agent%20Based%20Scanning-orange?style=for-the-badge" alt="Focus Area" /
+</p
 
 ---
 
 ## Project Objective
-> This project demonstrates how to provision a Windows Virtual Machine, deploy a Tenable Nessus Agent, and perform an agent-based vulnerability scan. The focus is on securely installing the agent, triggering the scan, monitoring its completion, and properly deprovisioning all assets.
+ This project demonstrates how to provision a Windows Virtual Machine, deploy a Tenable Nessus Agent, and perform an agent-based vulnerability scan. The focus is on securely installing the agent, triggering the scan, monitoring its completion, and properly deprovisioning all assets.
 
 ---
 
@@ -38,9 +38,9 @@
 ---
 
 ## Environment Setup
-> A Windows 10 VM was provisioned with strong credentials to prevent unauthorized access. Nessus Agents were installed using secure PowerShell scripts provided by the Tenable Cloud Portal. Configuration steps were followed to ensure the agent group, scan, and trigger were correctly set up for automated execution.
+ A Windows 10 VM was provisioned with strong credentials to prevent unauthorized access. Nessus Agents were installed using secure PowerShell scripts provided by the Tenable Cloud Portal. Configuration steps were followed to ensure the agent group, scan, and trigger were correctly set up for automated execution.
 
-![Environment Setup](assets/images/setup.jpg)
+![Environment Setup](https://github.com/Samuel-Cavada/Agent-Based-Monitoring-Windows/blob/main/images/ABMW1.png)
 
 ---
 
@@ -53,24 +53,25 @@
 ---
 
 ### Step 1: VM and Agent Group Setup
-> - Provisioned a Windows 10 VM from the Azure Marketplace. [See full provisioning steps ↗](https://github.com/Samuel-Cavada/Azure-VM-Build) (Ctrl+Click to open in a new tab).
-> - Created a new Agent Group in Tenable:  
-  `Settings → Sensors → Nessus Agents → Agent Groups → + Add Agent Group`
+ - Provisioned a Windows 10 VM from the Azure Marketplace. [See full provisioning steps ↗](https://github.com/Samuel-Cavada/Azure-VM-Build) (Ctrl+Click to open in a new tab).
+ - Logged into Tenable.io portal at [https://cloud.tenable.com](https://cloud.tenable.com)
+   - Created a new Agent Group in Tenable:  
+      `Settings → Sensors → Nessus Agents → Agent Groups → + Add Agent Group`
 
-![Step 1](assets/images/step1.jpg)
+![Step 1](https://github.com/Samuel-Cavada/Agent-Based-Monitoring-Windows/blob/main/images/ABMW5.png)
 
 ---
 
 ### Step 2: Install Nessus Agent
-> - Logged into Tenable.io portal at [https://cloud.tenable.com](https://cloud.tenable.com)
-> - Navigated to:  
+ - Navigated to:  
   `Settings → Sensors → Nessus Agents → + Add Nessus Agent`
-> - Copied the PowerShell install script, edited parameters as needed:
+ - Copied the PowerShell install script, edited parameters as needed:
 
+ - Ran the script in PowerShell as administrator inside the VM
 
-> - Ran the script in PowerShell as administrator inside the VM
+![Step 2](https://github.com/Samuel-Cavada/Agent-Based-Monitoring-Windows/blob/main/images/ABMW13.png)
+![Step 2](https://github.com/Samuel-Cavada/Agent-Based-Monitoring-Windows/blob/main/images/ABMW18.png)
 
-![Step 2](assets/images/step2.jpg)
 
 ---
 
@@ -84,7 +85,9 @@
     - Select trigger: `Filename`  
     - Enter value: `File name & file type (e.g., Start.txt)`
 
-![Step 3](assets/images/step3.jpg)
+![Step 3](https://github.com/Samuel-Cavada/Agent-Based-Monitoring-Windows/blob/main/images/ABMW10.png)
+![Step 3](https://github.com/Samuel-Cavada/Agent-Based-Monitoring-Windows/blob/main/images/ABMW20.png)
+
 
 ---
 
@@ -96,7 +99,8 @@
 
 - Waited 30–60 minutes for full vulnerability data to populate
 
-![Step 4](assets/images/step4.jpg)
+![Step 4](https://github.com/Samuel-Cavada/Agent-Based-Monitoring-Windows/blob/main/images/ABMW23.png)
+![Step 4](https://github.com/Samuel-Cavada/Agent-Based-Monitoring-Windows/blob/main/images/ABMW24.png)
 
 ---
 
